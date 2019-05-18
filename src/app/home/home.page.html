@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="todo-card">
+    <ion-card-header>
+      <ion-card-title>TODO List</ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let item of items">{{item.text}}
+        <ion-icon
+          name="close"
+          (click)="removeTodo(item.text)"
+          slot="end"
+          class="remove-todo"
+        >
+        </ion-icon>
+      </ion-item>
+    </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-input
+    class="todo-input"
+    placeholder="Enter TODO"
+    required=true
+    value={{todo}}
+    [(ngModel)]="todo"
+  >
+  </ion-input>
+  <ion-button class="todo-btn" (click)="addTodo()">Add TODO</ion-button>
+</ion-content>

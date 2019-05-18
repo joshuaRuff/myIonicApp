@@ -1,0 +1,27 @@
+.todo-card {
+  height: 45vh;
+  overflow: scroll;
+}
+
+.remove-todo {
+  color: cadetblue;
+  cursor: pointer;
+}
+
+.todo-input {
+  width: 95%;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.todo-btn {
+  width: 95%;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
